@@ -1,7 +1,6 @@
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
-use IEEE.STD_LOGIC_ARITH.ALL;
-use IEEE.STD_LOGIC_UNSIGNED.ALL;
+use IEEE.NUMERIC_STD.ALL;
 
 entity register_file is
     Port (
@@ -33,14 +32,14 @@ begin
 
             -- Read register 1
             if RA1 = "00000" then
-                RD1 <= X"00000000"
+                RD1 <= X"00000000";
             else
                 RD1 <= registers(to_integer(unsigned(RA1)));
             end if;
 
             -- Read register 2
             if RA2 = "00000" then
-                RD2 <= X"00000000"
+                RD2 <= X"00000000";
             else
                 RD2 <= registers(to_integer(unsigned(RA2)));
             end if;

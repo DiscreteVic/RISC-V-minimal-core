@@ -6,3 +6,5 @@ sources/bd/*
 !sources/
 !sources/bd/*.bd
 !core/
+!scripts/
+!tb/
