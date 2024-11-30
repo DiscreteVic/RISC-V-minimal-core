@@ -8,3 +8,7 @@ sources/bd/*
 !core/
 !scripts/
 !tb/
+
+#Temporal files from simulation
+*.vcd
+*.cf
